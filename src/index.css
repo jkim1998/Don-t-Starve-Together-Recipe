@@ -32,6 +32,24 @@ html {
   opacity: 80%;
 }
 
+.container:hover {
+  overflow-y: auto;
+  overflow: overlay;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-gap: 0.6em;
+  justify-content: center;
+  width: 80vw;
+}
+
+p {
+  color: red;
+  font-size: 90%;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
