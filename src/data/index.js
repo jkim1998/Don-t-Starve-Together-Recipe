@@ -93,3 +93,10 @@ export { default as Glow_Berry_Mousse } from "./dish/Glow_Berry_Mousse.png";
 export { default as Fish_Cordon_Bleu } from "./dish/Fish_Cordon_Bleu.png";
 export { default as Puffed_Potato } from "./dish/Puffed_Potato_Souffl%3F.png";
 export { default as Volt_Goat_Chaud } from "./dish/Volt_Goat_Chaud-Froid.png";
+
+export { default as Maxwell } from "./portraits/Maxwell_Portrait.png";
+
+export { default as frame } from "./frame.png";
+export { default as health } from "./Health_Meter.png";
+export { default as hunger } from "./Hunger_Meter.png";
+export { default as sanity } from "./Sanity_Meter.png";
