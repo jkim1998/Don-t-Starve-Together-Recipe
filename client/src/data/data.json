@@ -736,7 +736,7 @@
     "ingredients": [],
     "note": "Decreases perceived temperature by 40 degrees for 5 minutes.",
     "favorite": false,
-    "warly": false,
+    "warly": true,
     "character": ""
   },
   {
@@ -747,7 +747,7 @@
     "ingredients": [],
     "note": "",
     "favorite": false,
-    "warly": false,
+    "warly": true,
     "character": ""
   },
   {
@@ -758,7 +758,7 @@
     "ingredients": [],
     "note": "Provides wetness immunity for 5 minutes.",
     "favorite": false,
-    "warly": false,
+    "warly": true,
     "character": ""
   },
   {
@@ -769,7 +769,7 @@
     "ingredients": [],
     "note": "",
     "favorite": false,
-    "warly": false,
+    "warly": true,
     "character": ""
   },
   {
@@ -780,7 +780,7 @@
     "ingredients": [],
     "note": "Makes the player glow for 2 days.",
     "favorite": false,
-    "warly": false,
+    "warly": true,
     "character": ""
   },
   {
@@ -791,7 +791,7 @@
     "ingredients": [],
     "note": "Swaps Sanity and HP values",
     "favorite": false,
-    "warly": false,
+    "warly": true,
     "character": ""
   },
   {
@@ -802,7 +802,7 @@
     "ingredients": [],
     "note": "Increases perceived temperature by 40 degrees for 5 minutes.",
     "favorite": false,
-    "warly": false,
+    "warly": true,
     "character": ""
   },
   {
@@ -813,7 +813,7 @@
     "ingredients": [],
     "note": "",
     "favorite": false,
-    "warly": false,
+    "warly": true,
     "character": ""
   },
   {
@@ -824,7 +824,7 @@
     "ingredients": [],
     "note": "",
     "favorite": false,
-    "warly": false,
+    "warly": true,
     "character": ""
   },
   {
@@ -835,7 +835,7 @@
     "ingredients": [],
     "note": "",
     "favorite": false,
-    "warly": false,
+    "warly": true,
     "character": ""
   },
   {
@@ -846,7 +846,7 @@
     "ingredients": [],
     "note": "Applies electrical damage to player attacks for 5 minutes.",
     "favorite": false,
-    "warly": false,
+    "warly": true,
     "character": ""
   }
 ]

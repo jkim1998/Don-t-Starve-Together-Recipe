@@ -30,13 +30,14 @@ const Recipe = () => {
           <div
             className="flex flex-col h-[350px] p-2 rounded-lg cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-600"
             style={{
-              backgroundColor: data.warly
-                ? "rgba(234, 172, 173, 0.8)"
-                : "rgba(182, 172, 173, 0.8)",
+              backgroundColor:
+                data.warly
+                  ? "rgba(234, 172, 173, 0.4)"
+                  : "rgba(182, 172, 173, 0.4)",
             }}
             onClick={() => togglePopup(data)}
           >
-            <div className="flex flex-col h-full bg-white">
+            <div className="flex flex-col h-full">
               <div className="">
                 {!favorite ? (
                   <button onClick={() => toggleFavorite()}>
