@@ -34,7 +34,7 @@ const Banner = () => {
             </>
           )}
           <div className="flex flex-row gap-2 bg-sky-300">
-            <input type="checkbox" checked="checked" />
+            {/* <input type="checkbox" checked="checked" /> */}
             <span className="text-white">Warly</span>
           </div>
         </div>

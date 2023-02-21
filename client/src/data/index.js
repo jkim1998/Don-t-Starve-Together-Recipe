@@ -97,6 +97,7 @@ export { default as Volt_Goat_Chaud } from "./dish/Volt_Goat_Chaud-Froid.png";
 export { default as Maxwell } from "./portraits/Maxwell_Portrait.png";
 
 export { default as frame } from "./image/frame.png";
+export { default as random } from "./image/any.png";
 export { default as health } from "./icons/Health_Meter.png";
 export { default as hunger } from "./icons/Hunger_Meter.png";
 export { default as sanity } from "./icons/Sanity_Meter.png";
