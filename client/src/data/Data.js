@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Health from "./Health_Meter.png";
+import Health from "./icons/Health_Meter.png";
 import {
   Meats,
   Eggs,
@@ -205,6 +205,9 @@ export const RecipeData = [
     health: 3,
     ingredients: [[Meats, 0.5]],
     note: "",
+    favorite: true,
+    warly: false,
+    character: "Maxwell"
   },
 
   {
@@ -218,6 +221,8 @@ export const RecipeData = [
       [Honey, 1],
     ],
     note: "",
+    favorite: false,
+    warly: true,
   },
   {
     icon: BaconAndEgg,
@@ -599,6 +604,6 @@ export const RecipeData = [
       [Frog_Leg, 2],
       [Fishes, 1],
     ],
-    note:  "Immune to Wetness for 5min",
+    note: "Immune to Wetness for 5min",
   },
 ];

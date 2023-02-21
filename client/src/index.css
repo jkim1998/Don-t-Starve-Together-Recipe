@@ -1,12 +1,20 @@
-@import url('https://fonts.cdnfonts.com/css/dst');
+@font-face {
+  font-family: "DST";
+  src: local("belisa_plumilla"),
+    url("./data//font/belisa_plumilla.ttf") format("truetype");
+}
+
 body,
 html {
   margin: 0;
   padding: 0;
-  background-image: url("./data/background5.png");
+  background-image: url("./data/image/background5.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow-y: overlay;
+  font-weight: 900;
+  font-size: 20px;
+  height: 100%;
 }
 
 /* width */
@@ -45,8 +53,14 @@ html {
   width: 80vw;
 }
 
-p {
-  font-size: 80%;
+h2, p {
+  /* font-size: 80%; */
+  text-transform: capitalize;
+}
+
+.test {
+  border: 5px solid red;
+  width: 400px;
 }
 
 @tailwind base;
