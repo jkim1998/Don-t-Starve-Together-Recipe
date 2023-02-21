@@ -5,7 +5,7 @@ const Details = ({ data }) => {
   // console.log(data);
 
   return (
-    <div className="flex flex-col justify-center items-center gap-4 mx-10 w-[400px] h-[700px]">
+    <div className="flex flex-col justify-center items-center gap-4 mx-10 w-[400px] min-h-[700px]">
       <p className="border-solid border-b-2 border-black">{data.dish}</p>
       <div className="flex flex-row gap-2 w-full">
         {data.icon ? (
@@ -170,6 +170,9 @@ const Details = ({ data }) => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="min-h-[50px] w-full text-center">
+        {data.note ? <p>{data.note}</p> : <p>a</p>}
       </div>
       <div className="w-full h-fit">
         <img src={Maxwell} className="h-[50px]" />
