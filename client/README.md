@@ -1,17 +1,17 @@
 ### TO DO
 
 ## CSS
--stack images on top of each other?
 -banner design
+-footer
 
 ## function
 -click outside of popup to close  
 -search bar
--sort
-    -category
-    -sorting? drag-drop
+
 -local storage
     -favorite
+    -sort
+        -sorting? drag-drop
 
 ## data
 -update data
@@ -19,7 +19,7 @@
     -favorited by: string array
     -ingredients: string array | icons
     -spoil: number
-    -
+    -negative numbers are taken as absolute value 
 -upload data to db
 -upload icon
 -placeholder

@@ -5,13 +5,14 @@ import { frame, health, hunger, sanity, Maxwell, random, Twigs } from "../data";
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
 import { Details } from "./";
 
-const Recipe = () => {
+const Recipe = (props) => {
   const toolbarOptions = ["Search"];
   const editing = { allowDeleting: true, allowEditing: true };
   const [recipe, setRecipe] = useState([]);
   const [favorite, setFavorite] = useState(false);
   const [popup, setPopup] = useState(false);
   const [temp, setTemp] = useState([]);
+  const [data1, setData] = useState(data);
 
   const toggleFavorite = () => {
     setFavorite(!favorite);
@@ -23,17 +24,43 @@ const Recipe = () => {
     setTemp(props);
   };
 
+  const handleChildClick = (e) => {
+    e.stopPropagation();
+  };
+
+  const sortArray = (type) => {
+    const types = {
+      health: "health",
+      sanity: "sanity",
+      hunger: "hunger",
+      alphabet: "dish",
+      spoil: "spoil",
+    };
+    const sortProperty = types[type];
+    const sorted = [...data.sort((a, b) => b[sortProperty] - a[sortProperty])];
+    setData(sorted);
+    console.log("sorted by", types[type]);
+  };
+
+  useEffect(() => {
+    try {
+      sortArray(props.filter);
+    } catch (err) {
+      // console.log(err);
+    }
+    // console.log("in recipe component:", filter);
+  }, [props]);
+
   return (
     <>
-      {data.map((data) => (
-        <>
+      {data1.map((data) => (
+        <div key={data.dish}>
           <div
             className="flex flex-col h-[350px] p-2 rounded-lg cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-600"
             style={{
-              backgroundColor:
-                data.warly
-                  ? "rgba(234, 172, 173, 0.4)"
-                  : "rgba(182, 172, 173, 0.4)",
+              backgroundColor: data.warly
+                ? "rgba(234, 172, 173, 0.4)"
+                : "rgba(182, 172, 173, 0.4)",
             }}
             onClick={() => togglePopup(data)}
           >
@@ -155,12 +182,16 @@ const Recipe = () => {
           </div>
           {popup && (
             <div
-              className="flex flex-col justify-center items-center bg-black/5 absolute inset-0 p-10"
+              className="flex flex-col justify-center items-center bg-slate-900/[.01] absolute inset-0 p-10"
               style={{
                 display: popup ? "" : "none",
               }}
+              onClick={() => togglePopup()}
             >
-              <div className="bg-slate-200 rounded-lg">
+              <div
+                className="bg-slate-200 rounded-lg pointer-events-auto"
+                onClick={handleChildClick}
+              >
                 <div className="text-end my-5 mr-4">
                   <button onClick={() => togglePopup()}>x</button>
                 </div>
@@ -168,7 +199,7 @@ const Recipe = () => {
               </div>
             </div>
           )}
-        </>
+        </div>
       ))}
     </>
   );

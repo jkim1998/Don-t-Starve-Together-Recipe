@@ -172,7 +172,7 @@ const Details = ({ data }) => {
         </div>
       </div>
       <div className="min-h-[50px] w-full text-center">
-        {data.note ? <p>{data.note}</p> : <p>a</p>}
+        {data.note && <p>{data.note}</p>}
       </div>
       <div className="w-full h-fit">
         <img src={Maxwell} className="h-[50px]" />
