@@ -53,9 +53,15 @@ html {
   width: 80vw;
 }
 
-h2, p {
+h2,
+p,
+h3 {
   /* font-size: 80%; */
   text-transform: capitalize;
+}
+
+h3 {
+  color: white;
 }
 
 .test {

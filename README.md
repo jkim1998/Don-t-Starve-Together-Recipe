@@ -8,6 +8,8 @@
 -click outside of popup to close  
 -search bar
 
+-default sort value?
+
 -local storage
     -favorite
     -sort

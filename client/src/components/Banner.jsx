@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Banner = (props) => {
   const [name, setName] = useState();
+  const [filter, setFilter] = useState();
 
   const handleChange = (e) => {
     setName(e.target.value);
@@ -14,8 +15,18 @@ const Banner = (props) => {
 
   const handleFilter = (e) => {
     e.preventDefault();
-    props.onSubmit(e.target.value);
+    setFilter(e.target.value);
+    props.onSubmit(filter);
   };
+
+  // useEffect(() => {
+  //   try {
+  //     setFilter("health");
+  //     console.log("default: ", filter);
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // }, [filter]);
 
   return (
     <>
@@ -32,7 +43,9 @@ const Banner = (props) => {
           />
         </form>
         <div className="flex flex-row">
-          <div className="flex flex-row gap-2 bg-sky-300">Sort by</div>
+          <div className="flex flex-row gap-2">
+            <h3>Sort by</h3>
+          </div>
 
           <select onChange={handleFilter}>
             <option value="health">health</option>
@@ -41,7 +54,7 @@ const Banner = (props) => {
             <option value="spoil">spoil</option>
             <option value="alphabet">alphabet</option>
           </select>
-          <div className="flex flex-row gap-2 bg-sky-300">
+          <div className="flex flex-row gap-2">
             {/* <input type="checkbox" checked="checked" /> */}
             <span className="text-white">Warly</span>
           </div>

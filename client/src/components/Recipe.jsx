@@ -39,7 +39,7 @@ const Recipe = (props) => {
     const sortProperty = types[type];
     const sorted = [...data.sort((a, b) => b[sortProperty] - a[sortProperty])];
     setData(sorted);
-    console.log("sorted by", types[type]);
+    console.log("sortedd by", types[type]);
   };
 
   useEffect(() => {
